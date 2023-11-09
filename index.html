@@ -9,10 +9,11 @@
   <body>
     <div class="container">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             class="search-form-input"
+            id="search-form-input"
             placeholder="Enter a city"
             required
           />
@@ -22,7 +23,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="city-name">City Name</h1>
+            <h1 class="city-name" id="city-name">City Name</h1>
             <p class="weather-conditions">
               Time, Weather Condition
               <br />
@@ -56,5 +57,6 @@
         >
       </footer>
     </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
