@@ -3,45 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather Search</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input
-          type="search"
-          id="search-engine"
-          placeholder="Enter a city"
-          required
-        />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>City Name</h1>
-        <p>
-          Time, Weather Condition
-          <br />
-          Humidity, Windspeed
-        </p>
-      </div>
-      <div>Temperature (°C)</div>
-    </main>
+    <div class="container">
+      <header>
+        <form>
+          <input
+            type="search"
+            id="search-engine"
+            placeholder="Enter a city"
+            required
+          />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>City Name</h1>
+          <p>
+            Time, Weather Condition
+            <br />
+            Humidity, Windspeed
+          </p>
+        </div>
+        <div>Temperature (°C)</div>
+      </main>
 
-    <footer>
-      Coded by
-      <a href="https://github.com/lucynowland" target="_blank">Lucy Nowland</a>
-      and is open-sourced on
-      <a
-        href="https://github.com/lucynowland/vanilla-weather-search"
-        target="_blank"
-        >GitHub</a
-      >
-      hosted by
-      <a href="https://vanillaweathersearchproject.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <footer>
+        Coded by
+        <a href="https://github.com/lucynowland" target="_blank"
+          >Lucy Nowland</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/lucynowland/vanilla-weather-search"
+          target="_blank"
+          >GitHub</a
+        >
+        hosted by
+        <a
+          href="https://vanillaweathersearchproject.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
