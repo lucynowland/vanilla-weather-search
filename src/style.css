@@ -59,14 +59,14 @@ header {
 }
 
 .weather-icon {
-  font-size: 48px;
-  margin-top: 22px;
-  margin-right: 10px;
+  width: 88px;
+  height: 88px;
 }
 
 .current-temperature {
   font-size: 88px;
   font-weight: bold;
+  line-height: 88px;
 }
 
 .weather-unit {

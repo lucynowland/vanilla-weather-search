@@ -2,6 +2,9 @@ function updateWeatherData(response) {
   let cityElement = document.querySelector("#city-name");
   cityElement.innerHTML = response.data.city;
 
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class= "weather-icon"></img>`;
+
   let tempElement = document.querySelector("#current-temperature");
   let temperature = response.data.temperature.current;
   tempElement.innerHTML = Math.round(temperature);
