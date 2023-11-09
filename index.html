@@ -9,26 +9,32 @@
   <body>
     <div class="container">
       <header>
-        <form>
+        <form class="search-form">
           <input
             type="search"
-            id="search-engine"
+            class="search-form-input"
             placeholder="Enter a city"
             required
           />
-          <input type="submit" value="Search" />
+          <input type="submit" value="Search" class="search-form-btn" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>City Name</h1>
-          <p>
-            Time, Weather Condition
-            <br />
-            Humidity, Windspeed
-          </p>
+        <div class="weather-data">
+          <div>
+            <h1 class="city-name">City Name</h1>
+            <p class="weather-conditions">
+              Time, Weather Condition
+              <br />
+              Humidity: <strong>%</strong> Windspeed: <strong>km/h</strong>
+            </p>
+          </div>
+          <div class="temperature-container">
+            <div class="weather-icon">🌈</div>
+            <div class="current-temperature">Temp</div>
+            <div class="weather-unit">°C</div>
+          </div>
         </div>
-        <div>Temperature (°C)</div>
       </main>
 
       <footer>
