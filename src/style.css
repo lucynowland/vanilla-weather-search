@@ -35,7 +35,7 @@ header {
   color: #fff;
   font-size: 16px;
   margin-left: 5px;
-  padding: 15px 30px;
+  padding: 15px 22px;
 }
 
 .city-name {
@@ -81,6 +81,28 @@ main {
 .weather-data {
   display: flex;
   justify-content: space-between;
+}
+
+.forecast-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.forecast-date {
+  font-size: 16px;
+  color: #bababa;
+}
+
+.forecast-temperatures {
+  font-size: 13px;
+}
+
+.highest-temperature {
+  color: #ffa2b8;
+}
+
+.lowest-temperature {
+  color: #ffcde3;
 }
 
 a {

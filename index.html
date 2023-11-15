@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather Search</title>
   </head>
@@ -37,6 +43,23 @@
             <div id="icon"></div>
             <div class="current-temperature" id="current-temperature"></div>
             <div class="weather-unit">°C</div>
+          </div>
+        </div>
+
+        <div class="forecast-container">
+          <div class="row">
+            <div class="col">
+              <div class="forecast-date">Mon</div>
+              <img
+                src="https://i.pinimg.com/originals/d6/ed/54/d6ed5472bb46df9f40f38221757c588e.png"
+                alt=""
+                width="46px"
+              />
+              <div class="forecast-temperatures">
+                <span class="highest-temperature">11°</span>
+                <span class="lowest-temperature">9°</span>
+              </div>
+            </div>
           </div>
         </div>
       </main>
