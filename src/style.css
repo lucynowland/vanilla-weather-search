@@ -99,6 +99,7 @@ main {
 
 .highest-temperature {
   color: #ffa2b8;
+  font-weight: bold;
 }
 
 .lowest-temperature {

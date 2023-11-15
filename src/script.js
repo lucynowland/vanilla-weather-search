@@ -62,3 +62,27 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", updateCityName);
 
 searchCityName("Edinburgh");
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let weekdays = ["Thur", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHtml = "";
+
+  weekdays.forEach(function (weekday) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-day">
+      <div class="forecast-date">${weekday}</div>
+      <div class="forecast-icon">🌈</div>
+      <div class="forecast-temperatures">
+        <span class="highest-temperature">11°</span>
+        <span class="lowest-temperature">9°</span>
+      </div>
+  </div>`;
+  });
+
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
