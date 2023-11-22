@@ -21,6 +21,8 @@ function updateWeatherData(response) {
 
   let windSpeedElement = document.querySelector("#windspeed");
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(timeStamp) {
@@ -63,7 +65,9 @@ searchFormElement.addEventListener("submit", updateCityName);
 
 searchCityName("Edinburgh");
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
+
   let forecastElement = document.querySelector("#weather-forecast");
 
   let weekdays = ["Thur", "Fri", "Sat", "Sun", "Mon"];
@@ -85,4 +89,8 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
-displayForecast();
+function getForecast(city) {
+  let apiKey = "b4695dbeo3231b4ta37cdcd77c20d1fa";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
