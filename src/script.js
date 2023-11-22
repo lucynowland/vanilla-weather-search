@@ -65,25 +65,40 @@ searchFormElement.addEventListener("submit", updateCityName);
 
 searchCityName("Edinburgh");
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+
+  let weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+  return weekdays[date.getDay()];
+}
+
 function displayForecast(response) {
   console.log(response.data);
 
   let forecastElement = document.querySelector("#weather-forecast");
 
-  let weekdays = ["Thur", "Fri", "Sat", "Sun", "Mon"];
   let forecastHtml = "";
 
-  weekdays.forEach(function (weekday) {
-    forecastHtml =
-      forecastHtml +
-      `<div class="forecast-day">
-      <div class="forecast-date">${weekday}</div>
-      <div class="forecast-icon">🌈</div>
+  response.data.daily.forEach(function (weekday, index) {
+    if (index < 5) {
+      forecastHtml =
+        forecastHtml +
+        `<div class="forecast-day">
+      <div class="forecast-date">${formatDay(weekday.time)}</div>
+   
+      <img src="${weekday.condition.icon_url}" class="forecast-icon"  />
+     
       <div class="forecast-temperatures">
-        <span class="highest-temperature">11°</span>
-        <span class="lowest-temperature">9°</span>
+        <div class="highest-temperature">${Math.round(
+          weekday.temperature.maximum
+        )}°</div>
+        <div class="lowest-temperature">${Math.round(
+          weekday.temperature.minimum
+        )}°</div>
       </div>
   </div>`;
+    }
   });
 
   forecastElement.innerHTML = forecastHtml;
