@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-  background-color: #ffcde3;
+  background-color: #ffa0d2;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  background-color: #fff;
+  background-color: #fff8cd;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
   max-width: 600px;
@@ -20,7 +20,7 @@ header {
 }
 
 .search-form-input {
-  background-color: #f9f7fe;
+  background-color: #fff;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -29,7 +29,7 @@ header {
 }
 
 .search-form-btn {
-  background-color: #ffcde3;
+  background-color: #ffa0d2;
   border: none;
   border-radius: 6px;
   color: #fff;
@@ -47,11 +47,11 @@ header {
 .weather-conditions {
   font-size: 16px;
   line-height: 24px;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgba(39, 33, 66, 0.6);
 }
 
 .weather-conditions strong {
-  color: #ffa2b8;
+  color: #ffa0d2;
 }
 
 .temperature-container {
@@ -94,7 +94,7 @@ main {
   line-height: 20px;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #bababa;
+  color: rgba(39, 33, 66, 0.6);
 }
 
 .forecast-icon {
@@ -112,18 +112,18 @@ main {
 }
 
 .highest-temperature {
-  color: #ffa2b8;
+  color: #f54291;
   font-weight: bold;
   padding: 0 6px;
 }
 
 .lowest-temperature {
-  color: #ffcde3;
+  color: #ff78ae;
   padding: 0 6px;
 }
 
 a {
-  color: #ffcde3;
+  color: #ffa0d2;
 }
 
 footer {
