@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+:root {
+  --primary-color: black;
+  --secondary-color: #3f434c;
+  --accent-color: #bb171b;
+}
+
 body {
-  background-color: #ffa0d2;
+  background-color: var(--secondary-color);
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  background-color: #fff8cd;
+  background-color: var(--primary-color);
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
   max-width: 600px;
@@ -29,7 +35,7 @@ header {
 }
 
 .search-form-btn {
-  background-color: #ffa0d2;
+  background-color: var(--accent-color);
   border: none;
   border-radius: 6px;
   color: #fff;
@@ -39,19 +45,20 @@ header {
 }
 
 .city-name {
+  color: white;
   font-size: 38px;
   line-height: 48px;
   margin: 0;
 }
 
 .weather-conditions {
+  color: white;
   font-size: 16px;
   line-height: 24px;
-  color: rgba(39, 33, 66, 0.6);
 }
 
 .weather-conditions strong {
-  color: #ffa0d2;
+  color: var(--accent-color);
 }
 
 .temperature-container {
@@ -64,12 +71,14 @@ header {
 }
 
 .current-temperature {
+  color: white;
   font-size: 88px;
   font-weight: bold;
   line-height: 88px;
 }
 
 .weather-unit {
+  color: white;
   font-size: 28px;
   margin-top: 15px;
 }
@@ -90,11 +99,11 @@ main {
 }
 
 .forecast-date {
+  color: white;
   text-align: center;
   line-height: 20px;
   margin-bottom: 10px;
   font-size: 16px;
-  color: rgba(39, 33, 66, 0.6);
 }
 
 .forecast-icon {
@@ -112,23 +121,23 @@ main {
 }
 
 .highest-temperature {
-  color: #f54291;
+  color: var(--accent-color);
   font-weight: bold;
   padding: 0 6px;
 }
 
 .lowest-temperature {
-  color: #ff78ae;
+  color: #f15860;
   padding: 0 6px;
 }
 
 a {
-  color: #ffa0d2;
+  color: var(--accent-color);
 }
 
 footer {
   border-top: 1px solid #f9f7fe;
-  color: rgba(0, 0, 0, 0.6);
+  color: white;
   font-size: 14px;
   padding-top: 30px;
   text-align: center;
